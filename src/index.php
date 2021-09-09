@@ -1,4 +1,7 @@
 <?php
+
+require_once '../vendor/autoload.php';
+
 session_start();
 $data = $_SESSION['data'] ?: [];
 $email = $_POST['email'] ?? '';
